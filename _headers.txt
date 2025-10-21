@@ -1,0 +1,13 @@
+# Serve Brotli Unity files with correct encoding and MIME type
+/Build/*
+  Content-Encoding: br
+  Cache-Control: public, max-age=31536000, immutable
+
+/Build/*.wasm
+  Content-Type: application/wasm
+
+/Build/*.js
+  Content-Type: application/javascript
+
+/Build/*.data
+  Content-Type: application/octet-stream
